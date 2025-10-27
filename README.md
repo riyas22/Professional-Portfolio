@@ -4,8 +4,6 @@
 
 ![](https://img.shields.io/badge/license-MIT-blue.svg)
 
-[![Premium Version](https://img.shields.io/badge/PREMIUM_%20VERSION-AVAILABLE-%2300C7B7?style=for-the-badge&logo=stellar&logoColor=white)](https://basit313.gumroad.com/l/nextjs-developer-portfolio-template)
-
 ✨ **Professional Portfolio Template** built with Next.js 15 • 🚀 Tailwind V4 • 📱 Fully Responsive • 🎨 Modern Design • 🔍 SEO Friendly
 
 ![Next.js Portfolio Template Hero Section](https://ik.imagekit.io/cpnw7c0xpe/Tailwind%20Components/Templates/Flexy%20Dev%20Cover%20New.png?updatedAt=1741812978958)
