@@ -17,6 +17,8 @@ interface ProjectCardProps {
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ data }) => {
   const [isModalOpen, setIsModalOpen] = useState(false)
+  const [backgroundColor, setBackgroundColor] = useState('')
+  const [textColor, setTextColor] = useState('')
   
   const {
     title,
@@ -32,6 +34,14 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ data }) => {
     type,
     cover,
   } = data
+
+  useEffect(() => {
+    // Get the actual background color from the document
+    const bodyBg = window.getComputedStyle(document.body).backgroundColor
+    const bodyColor = window.getComputedStyle(document.body).color
+    setBackgroundColor(bodyBg)
+    setTextColor(bodyColor)
+  }, [])
 
   useEffect(() => {
     if (isModalOpen) {
@@ -117,7 +127,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ data }) => {
         </div>
       </div>
 
-      {/* MODAL POPUP - SOLID BACKGROUND */}
+      {/* MODAL POPUP - USES ACTUAL PAGE BACKGROUND COLOR */}
       {isModalOpen && (
         <div 
           className="fixed inset-0 z-[9999] flex items-center justify-center p-4"
@@ -125,12 +135,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ data }) => {
           onClick={() => setIsModalOpen(false)}
         >
           <div 
-            className="relative max-w-3xl w-full max-h-[90vh] overflow-y-auto p-8 rounded-2xl shadow-2xl"
+            className="relative max-w-3xl w-full max-h-[90vh] overflow-y-auto p-8 rounded-2xl shadow-2xl border border-base-300"
             style={{
-              backgroundColor: 'oklch(var(--b1) / 1)',
-              color: 'oklch(var(--bc))',
-              borderColor: 'oklch(var(--b3))',
-              borderWidth: '1px'
+              backgroundColor: backgroundColor,
+              color: textColor,
             }}
             onClick={(e) => e.stopPropagation()}
           >
@@ -138,17 +146,14 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ data }) => {
             <button
               onClick={() => setIsModalOpen(false)}
               className="absolute top-4 right-4 text-3xl font-bold hover:opacity-70 transition-opacity w-10 h-10 flex items-center justify-center rounded-full"
-              style={{ color: 'oklch(var(--bc))' }}
+              style={{ color: textColor }}
             >
               ×
             </button>
 
             {/* Project Cover Image */}
             {cover && (
-              <div 
-                className="mb-6 rounded-lg overflow-hidden"
-                style={{ borderColor: 'oklch(var(--b3))', borderWidth: '1px' }}
-              >
+              <div className="mb-6 rounded-lg overflow-hidden border border-base-300">
                 <Image
                   src={cover}
                   width={800}
@@ -160,92 +165,47 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ data }) => {
             )}
 
             {/* Project Title */}
-            <h2 
-              className="text-3xl font-bold mb-2"
-              style={{ color: 'oklch(var(--bc))' }}
-            >
+            <h2 className="text-3xl font-bold mb-2" style={{ color: textColor }}>
               {title}
             </h2>
             
             {/* Project Type Badge */}
             {type && (
-              <span 
-                className="inline-block px-3 py-1 rounded-md text-sm font-semibold mb-4"
-                style={{ 
-                  backgroundColor: 'oklch(var(--p))',
-                  color: 'oklch(var(--pc))'
-                }}
-              >
+              <span className="inline-block px-3 py-1 rounded-md text-sm font-semibold mb-4 bg-accent text-white">
                 {type}
               </span>
             )}
 
             {/* Project Stats */}
-            <div 
-              className="flex flex-wrap gap-6 mb-6 pb-6"
-              style={{ borderBottom: '1px solid oklch(var(--b3))' }}
-            >
+            <div className="flex flex-wrap gap-6 mb-6 pb-6 border-b border-base-300">
               {visitors && (
-                <div style={{ color: 'oklch(var(--bc))' }}>
-                  <span 
-                    className="font-semibold"
-                    style={{ color: 'oklch(var(--p))' }}
-                  >
-                    {visitors}
-                  </span> Visitors
+                <div style={{ color: textColor }}>
+                  <span className="font-semibold text-accent">{visitors}</span> Visitors
                 </div>
               )}
               {earned && (
-                <div style={{ color: 'oklch(var(--bc))' }}>
-                  <span 
-                    className="font-semibold"
-                    style={{ color: 'oklch(var(--p))' }}
-                  >
-                    {earned}
-                  </span> Earned
+                <div style={{ color: textColor }}>
+                  <span className="font-semibold text-accent">{earned}</span> Earned
                 </div>
               )}
               {siteAge && (
-                <div style={{ color: 'oklch(var(--bc))' }}>
-                  <span 
-                    className="font-semibold"
-                    style={{ color: 'oklch(var(--p))' }}
-                  >
-                    {siteAge}
-                  </span>
+                <div style={{ color: textColor }}>
+                  <span className="font-semibold text-accent">{siteAge}</span>
                 </div>
               )}
               {githubStars && (
-                <div style={{ color: 'oklch(var(--bc))' }}>
-                  <span 
-                    className="font-semibold"
-                    style={{ color: 'oklch(var(--p))' }}
-                  >
-                    {githubStars}
-                  </span> Stars
+                <div style={{ color: textColor }}>
+                  <span className="font-semibold text-accent">{githubStars}</span> Stars
                 </div>
               )}
             </div>
 
             {/* Full Description */}
-            <div 
-              className="mb-6 rounded-lg p-6"
-              style={{ 
-                backgroundColor: 'oklch(var(--b2) / 1)',
-                borderColor: 'oklch(var(--b3))',
-                borderWidth: '1px'
-              }}
-            >
-              <h3 
-                className="text-xl font-semibold mb-3"
-                style={{ color: 'oklch(var(--p))' }}
-              >
+            <div className="mb-6 rounded-lg p-6 bg-base-200 border border-base-300">
+              <h3 className="text-xl font-semibold mb-3 text-accent">
                 Project Description
               </h3>
-              <p 
-                className="text-base leading-relaxed opacity-90"
-                style={{ color: 'oklch(var(--bc))' }}
-              >
+              <p className="text-base leading-relaxed opacity-90" style={{ color: textColor }}>
                 {shortDescription}
               </p>
             </div>
@@ -257,11 +217,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ data }) => {
                   href={livePreview}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-6 py-3 rounded-lg font-semibold transition-transform flex items-center gap-2 hover:scale-105"
-                  style={{ 
-                    backgroundColor: 'oklch(var(--p))',
-                    color: 'oklch(var(--pc))'
-                  }}
+                  className="px-6 py-3 rounded-lg font-semibold transition-transform flex items-center gap-2 hover:scale-105 bg-accent text-white"
                 >
                   <PreviewIcon className="w-5 h-5" />
                   Live Preview
@@ -272,13 +228,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ data }) => {
                   href={githubLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-6 py-3 rounded-lg font-semibold transition-transform flex items-center gap-2 hover:scale-105"
-                  style={{ 
-                    backgroundColor: 'oklch(var(--b2) / 1)',
-                    color: 'oklch(var(--bc))',
-                    borderColor: 'oklch(var(--b3))',
-                    borderWidth: '1px'
-                  }}
+                  className="px-6 py-3 rounded-lg font-semibold transition-transform flex items-center gap-2 hover:scale-105 bg-base-200 border border-base-300"
+                  style={{ color: textColor }}
                 >
                   <GithubIcon className="w-5 h-5" />
                   View Code
