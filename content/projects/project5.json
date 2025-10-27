@@ -1,0 +1,8 @@
+{
+  "priority": 5,
+  "title": "Multi-Platform Monitoring System",
+  "shortDescription": "Deployed Zabbix monitoring infrastructure for comprehensive system observability, along with OpenSearch 3.1.1 and OpenSearch Dashboards for log aggregation, analysis, and visualization across hybrid cloud infrastructure.",
+  "cover": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop",
+  "type": "Observability 📊",
+  "visitors": "100+ Hosts"
+}

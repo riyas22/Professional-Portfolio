@@ -1,0 +1,7 @@
+{
+  "priority": 6,
+  "title": "Container & Self-Hosted Services Platform",
+  "shortDescription": "Built and manage containerized infrastructure using Docker for various services including Nextcloud on-premises file sharing, local OLLAMA AI models, and custom business applications with automated deployment pipelines on Linux servers.",
+  "cover": "https://images.unsplash.com/photo-1605745341112-85968b19335b?q=80&w=2070&auto=format&fit=crop",
+  "type": "Infrastructure 🐳"
+}

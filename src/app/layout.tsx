@@ -8,10 +8,10 @@ import { Fira_Code } from 'next/font/google'
 
 const firaCode = Fira_Code({ subsets: ['latin'], weight: ['300', '400', '500', '600', '700'] })
 
-const title = 'John Doe | Full-Stack Web Developer in Chicago'
+const title = 'Riyasudeen Farook | IT Operations Manager'
 
 const description =
-  "Skilled full-stack web developer in Chicago. I build responsive, user-friendly websites with React, NextJS, and NodeJS. Let's bring your vision to life. Hire me today!"
+  'IT Operations Manager based in Riyadh, Saudi Arabia, specializing in Infrastructure Management, Cloud Operations, and Enterprise Security. Expertise in Nutanix, Microsoft 365, CrowdStrike, Palo Alto, and automation with Docker and n8n.'
 
 const url = process.env.NEXT_PUBLIC_SITE_URL
 
@@ -19,6 +19,25 @@ export const metadata: Metadata = {
   title,
   description,
   category: 'technology',
+  keywords: [
+    'IT Operations Manager',
+    'Infrastructure Architect',
+    'Nutanix',
+    'Microsoft 365',
+    'Intune MDM',
+    'CrowdStrike',
+    'Palo Alto Firewall',
+    'Enterprise Security',
+    'Cloud Operations',
+    'Riyadh Saudi Arabia',
+    'IT Infrastructure',
+    'Docker',
+    'n8n Automation',
+    'Zabbix',
+    'OpenSearch',
+    'Proofpoint'
+  ],
+  authors: [{ name: 'Riyasudeen Farook' }],
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL!),
   alternates: {
     canonical: url,
@@ -27,14 +46,15 @@ export const metadata: Metadata = {
     title,
     description,
     url,
-    siteName: 'John Doe Portfolio',
+    siteName: 'Riyasudeen Farook Portfolio',
     type: 'website',
+    locale: 'en_US',
   },
   twitter: {
     title,
     description,
     card: 'summary_large_image',
-    creator: '@Basit_Miyanji',
+    creator: '@riyasudeenpm', 
   },
 }
 

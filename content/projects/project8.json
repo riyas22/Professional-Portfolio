@@ -1,0 +1,8 @@
+{
+  "priority": 8,
+  "title": "AI-Powered Helpdesk System with Zammad",
+  "shortDescription": "Deployed enterprise ticketing system using Zammad on Docker infrastructure with AI-enhanced ticket management capabilities. Integrated n8n workflow automation for intelligent ticket routing, automated response generation using local Ollama AI models, and sentiment analysis for priority classification. Connected OpenSearch for advanced ticket analytics and reporting dashboards. Implemented automated workflows for common IT requests including password resets, software installations, and access provisioning, reducing average ticket resolution time by 40%. System handles 200+ tickets monthly with email integration, user portal, and real-time notifications via Microsoft Teams integration.",
+  "type": "Automation & AI 🤖",
+  "cover": "https://images.unsplash.com/photo-1553877522-43269d4ea984?w=500&q=80",
+  "visitors": "200+ Tickets/Month"
+}

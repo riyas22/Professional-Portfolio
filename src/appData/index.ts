@@ -1,4 +1,4 @@
-// Data for portfolio
+// Data for portfolio - IT Operations Focus
 import {
   ExpressjsIcon,
   JavaScriptIcon,
@@ -11,148 +11,173 @@ import {
   TypescriptIcon,
 } from '../utils/icons'
 
-// Project Data
+// Project Data - Your Real IT Projects
 export const projects = [
   {
     priority: 1,
-    title: 'Project Alpha',
+    title: 'Enterprise Nutanix Infrastructure',
     shortDescription:
-      'A groundbreaking project that revolutionizes the way we approach technology. Built with cutting-edge tools for maximum efficiency, it sets new industry standards.',
+      'Designed and deployed hyper-converged infrastructure cluster running Windows Domain Controllers, SQL clusters, Veeam backup systems, and critical business applications with high availability.',
     cover:
-      'https://images.unsplash.com/photo-1585282263861-f55e341878f8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    livePreview: 'https://example.com/alpha',
-    type: 'Client Work 🙍‍♂️',
-    siteAge: '1 month old',
+      'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=2070&auto=format&fit=crop',
+    livePreview: '',
+    type: 'Infrastructure 🏗️',
+    siteAge: '18 months old',
   },
   {
     priority: 2,
-    title: 'Project Beta',
+    title: 'Microsoft 365 & Intune MDM Deployment',
     shortDescription:
-      'Project Beta is a static technical blog site built with GatsbyJS. I share tips on topics like building reusable components in React, explaining JavaScript methods and concepts, Node.js scripts, and more.',
+      'Led enterprise-wide Microsoft 365 migration and implemented Intune MDM for device management, including Windows Update control, security policies, and compliance monitoring across 500+ endpoints.',
     cover:
-      'https://plus.unsplash.com/premium_photo-1663040328859-48bddaa9dfeb?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    livePreview: 'https://example.com/beta',
-    visitors: '8K Visitors',
-    earned: '$400 Earned',
+      'https://images.unsplash.com/photo-1633265486064-086b219458ec?q=80&w=2070&auto=format&fit=crop',
+    livePreview: '',
+    visitors: '800+ Devices',
+    type: 'Cloud & Identity ☁️',
   },
   {
     priority: 3,
-    title: 'Project Epsilon',
+    title: 'n8n Security Automation Framework',
     shortDescription:
-      'A collection of engaging coding challenges designed to help developers improve their ReactJS skills by writing functional business logic. Your task is to make it functional by writing business logic, to improve your frontend skills',
+      'Built automated workflow system for vulnerability reporting, incident response, and IT operations using n8n with Docker. Integrated Microsoft Defender, SharePoint, and email notifications.',
     cover:
-      'https://plus.unsplash.com/premium_photo-1661700152890-931fb04588e6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-
-    type: 'Free 🔥',
-    livePreview: 'https://example.com/epsilon',
-    githubLink: 'https://github.com/example/ReactJS-Coding-Challenges',
-    githubStars: '40 Stars',
-    numberOfSales: '138 Sales',
+      'https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?q=80&w=2070&auto=format&fit=crop',
+    type: 'Automation 🤖',
+    livePreview: '',
+    githubLink: 'https://github.com/riyas22',
   },
   {
     priority: 4,
-    title: 'Ejucationzz',
+    title: 'Enterprise Security & Network Architecture',
     shortDescription:
-      'Ejucationzz is a directory site I created for myself using Next.js. On Ejucationzz, you can find free and paid online and offline courses available in Pakistan. 14 academies and 12 main categories, each with subcategories, have been listed. Ejucationzz is a directory site I created for myself using Next.js. On Ejucationzz, you can find free and paid online and offline courses available in Pakistan. 14 academies and 12 main categories, each with subcategories, have been listed.',
+      'Configured and manage comprehensive security infrastructure including Palo Alto firewall, CrowdStrike EDR, Proofpoint email security, nginx reverse proxy with SSL/TLS, and VPN access.',
     cover:
-      'https://images.unsplash.com/photo-1527334919515-b8dee906a34b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    type: 'New 🔥',
-    livePreview: 'https://example.com/Ejucationzz',
-    siteAge: '4 months old',
-    visitors: '100 Visitors',
-    githubLink: '',
-    earned: '',
+      'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2070&auto=format&fit=crop',
+    type: 'Security 🔒',
+    livePreview: '',
+    siteAge: 'Ongoing',
+  },
+  {
+    priority: 5,
+    title: 'Multi-Platform Monitoring System',
+    shortDescription:
+      'Deployed Zabbix monitoring infrastructure for comprehensive system observability, along with OpenSearch 3.1.1 and Dashboards for log aggregation and analysis.',
+    cover:
+      'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop',
+    type: 'Observability 📊',
+    livePreview: '',
+    visitors: '100+ Hosts',
+  },
+  {
+    priority: 6,
+    title: 'Container & Self-Hosted Services',
+    shortDescription:
+      'Built and manage containerized infrastructure using Docker for services including Nextcloud on-premises file sharing, local OLLAMA AI models, and custom business applications.',
+    cover:
+      'https://images.unsplash.com/photo-1605745341112-85968b19335b?q=80&w=2070&auto=format&fit=crop',
+    type: 'Infrastructure 🐳',
+    livePreview: '',
+    siteAge: '1 year old',
   },
 ]
 
-// Service Data
+// Service Data - Replaced with IT Operations Skills
 export const serviceData = [
   {
-    icon: JavaScriptIcon,
-    title: 'JavaScript Development',
-    shortDescription: 'Creating dynamic and interactive web applications using JavaScript.',
+    icon: '🏗️',
+    title: 'Infrastructure Management',
+    shortDescription: 'Designing and managing enterprise infrastructure with Nutanix, VMware, and Windows Server.',
   },
   {
-    icon: ReactIcon,
-    title: 'React.js Development',
-    shortDescription: 'Building modern and responsive user interfaces with React.js.',
+    icon: '☁️',
+    title: 'Cloud Operations',
+    shortDescription: 'Microsoft 365, Intune MDM, and Azure Active Directory enterprise deployments.',
   },
   {
-    icon: NodejsIcon,
-    title: 'Node.js Backend',
-    shortDescription: 'Developing scalable server-side applications using Node.js.',
+    icon: '🔒',
+    title: 'Security & Compliance',
+    shortDescription: 'CrowdStrike EDR, Palo Alto Firewall, Proofpoint email security implementation.',
   },
   {
-    icon: NextjsIcon,
-    title: 'Next.js Development',
-    shortDescription: 'Creating server-rendered React applications with Next.js.',
+    icon: '🤖',
+    title: 'Automation & DevOps',
+    shortDescription: 'Building automation workflows with n8n, Docker containerization, and CI/CD.',
   },
   {
-    icon: TypescriptIcon,
-    title: 'TypeScript Development',
-    shortDescription: 'Ensuring robust and maintainable code with TypeScript.',
+    icon: '📊',
+    title: 'Monitoring & Observability',
+    shortDescription: 'Zabbix monitoring, OpenSearch log aggregation, and performance analysis.',
   },
   {
-    icon: TailwindCSS,
-    title: 'Tailwind CSS Styling',
-    shortDescription: 'Designing beautiful and responsive interfaces with Tailwind CSS.',
+    icon: '🛠️',
+    title: 'Systems Administration',
+    shortDescription: 'Active Directory, SQL Server clustering, Veeam backup, and Linux server management.',
+  },
+  {
+    icon: '🌐',
+    title: 'Network Architecture',
+    shortDescription: 'Cisco & Aruba Switches, Aruba Access Points, Mac Filtered Internet, and Designing Network Infrastructure.',
+  },
+  {
+    icon: '⚡',
+    title: 'SD-WAN',
+    shortDescription: 'Site-Site Connectivity, MPLS, QOS based routing, BIO and WAN Optimization.',
   },
 ]
 
-// Skill List
+// Skill List - IT Operations Technologies
 export const skillList = [
   {
-    name: 'JavaScript',
-    icon: JavaScriptIcon,
+    name: 'Nutanix HCI',
+    icon: '🏗️',
   },
   {
-    name: 'TypeScript',
-    icon: TypescriptIcon,
+    name: 'Microsoft 365',
+    icon: '☁️',
   },
   {
-    name: 'React.js',
-    icon: ReactIcon,
+    name: 'Intune MDM',
+    icon: '📱',
   },
   {
-    name: 'Next.js',
-    icon: NextjsIcon,
+    name: 'Windows Server',
+    icon: '🪟',
   },
   {
-    name: 'Node.js',
-    icon: NodejsIcon,
+    name: 'Linux Servers',
+    icon: '🐧',
   },
   {
-    name: 'Express.js',
-    icon: ExpressjsIcon,
+    name: 'CrowdStrike',
+    icon: '🛡️',
   },
   {
-    name: 'Nest.js',
-    icon: NestjsIcon,
+    name: 'Palo Alto',
+    icon: '🔥',
   },
   {
-    name: 'Socket.io',
-    icon: SocketIcon,
+    name: 'Docker',
+    icon: '🐳',
+  },
+  {
+    name: 'Network Architecture',
+    icon: '🌐',
+  },
+  {
+    name: 'SD-WAN',
+    icon: '⚡',
   },
 ]
 
+// Footer Links - Removed Testimonials and Blogs
 export const footerLinks = [
-  { title: 'About', href: '#' },
+  { title: 'About', href: '#about' },
   { title: 'Projects', href: '#projects' },
-  { title: 'Testimonials', href: '#testimonials' },
-  {
-    title: 'Blogs',
-    href: '#blogs',
-  },
-  {
-    title: 'Services',
-    href: '#services',
-  },
-  {
-    title: 'Contact',
-    href: '#contact',
-  },
+  { title: 'Skills', href: '#skills' },
+  { title: 'Contact', href: '#contact' },
 ]
 
+// Themes
 export const themes = [
   {
     name: 'Light',
@@ -172,4 +197,5 @@ export const themes = [
   },
 ]
 
-export const languages = ['En', 'Es', 'Fr', 'De', 'Ru']
+// Languages
+export const languages = ['En', 'Ar']

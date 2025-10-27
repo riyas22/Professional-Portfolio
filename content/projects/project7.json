@@ -1,0 +1,8 @@
+{
+  "priority": 7,
+  "title": "Enterprise Veeam Backup & Disaster Recovery",
+  "shortDescription": "Implemented comprehensive enterprise backup solution using Veeam Backup & Replication for Microsoft 365 and on-premises infrastructure. Deployed automated backup workflows protecting 800+ mailboxes, OneDrive data, SharePoint sites, and critical business applications running on Nutanix hypervisor. Configured backup policies with 3-2-1 strategy, immutable backups for ransomware protection, and disaster recovery testing procedures ensuring 99.9% data recoverability and RPO of 4 hours. Established monitoring dashboards for backup job tracking, storage optimization, and automated alerting for failed jobs via n8n workflows.",
+  "type": "Infrastructure 💾",
+  "cover": "https://images.unsplash.com/photo-1597852074816-d933c7d2b988?w=500&q=80",
+  "visitors": "800+ Users Protected"
+}

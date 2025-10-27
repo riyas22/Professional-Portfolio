@@ -4,101 +4,110 @@ import Logo from '../Navbar/Logo'
 
 const Footer = () => {
   return (
-    <footer className="bg-secondary relative flex min-h-[560px] flex-col justify-between gap-20 overflow-hidden px-4 py-14 md:p-14">
-      <div className="relative z-20 grid grid-cols-1 items-start gap-20 md:grid-cols-2 md:gap-12">
-        <div>
-          <h5 className="mb-8 flex items-center gap-2">
-            <Logo width={30} height={24} />
-            <span className="text-neutral text-lg font-medium">Logoipsum</span>
-          </h5>
-          <p className="text-tertiary-content">
-            The first free end-to-end analytics service for the site, designed to work with
-            enterprises of various levels and business segments.
-          </p>
-          <a
-            href="#"
-            className="text-neutral mt-4 inline-flex items-center gap-2 text-xs hover:underline">
-            More about us <span className="bg-neutral inline-block size-[10px] rounded-full" />
-          </a>
-        </div>
-
-        <div className="flex flex-wrap gap-8">
-          {footerLinks.map((link) => (
-            <a
-              href={link.href}
-              key={link.href}
-              className="text-tertiary-content hover:text-neutral transition-colors duration-300 hover:underline">
-              {link.title}.
-            </a>
-          ))}
-        </div>
-      </div>
-
-      <div className="relative z-20 flex flex-col-reverse gap-20 md:grid md:grid-cols-2 md:gap-12">
-        <div className="grid grid-cols-2 gap-4">
-          <ul className="flex flex-col gap-4">
-            {socials.map((item, index) => (
-              <li key={index} className="cursor-pointer bg-transparent">
-                <a
-                  href={item.href}
-                  className="text-neutral transition-color hover:text-neutral/50 h-full w-full duration-300">
-                  {item.icon}
-                </a>
-              </li>
-            ))}
-          </ul>
-          <p className="text-tertiary-content flex flex-col self-end text-right text-xs md:text-center">
-            <span>© 2025 — Copyright</span>
-            <span>All Rights reserved</span>
-          </p>
-        </div>
-
-        <div className="flex flex-col justify-between gap-[200px] md:flex-row md:gap-8">
-          <div className="space-y-10 md:self-end">
-            <div className="flex flex-col">
-              <h5 className="text-neutral mb-4 text-lg font-medium">Contact Us</h5>
-              <a
-                href="mailto:johndoe@gmail.com"
-                className="text-tertiary-content hover:text-neutral text-sm font-light transition-colors duration-300">
-                johndoe@gmail.com
-              </a>
-              <a
-                href="tel:+92 3123456789"
-                className="text-tertiary-content hover:text-neutral text-sm font-light transition-colors duration-300">
-                +92 3123456789
-              </a>
+    <footer className="bg-secondary relative overflow-hidden px-4 py-10 md:px-14 md:py-12">
+      <div className="relative z-20 max-w-[1200px] mx-auto">
+        
+        {/* TOP SECTION: Logo & Description + Navigation Links */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
+          {/* Left: Logo & Bio */}
+          <div>
+            <div className="mb-4 flex items-center gap-2">
+              <Logo width={30} height={24} />
+              <span className="text-neutral text-lg font-semibold">Riyasudeen Farook</span>
             </div>
-            <div>
-              <div>
-                <h5 className="text-neutral mb-4 text-lg font-medium">Location</h5>
-                <address className="text-tertiary-content flex flex-col text-sm font-light">
-                  <span>123456, Pakistan</span>
-                  <span>Karachi 22/5/8, Office 4</span>
-                </address>
-              </div>
+            <p className="text-neutral opacity-70 text-sm leading-relaxed">
+              IT Operations Manager specializing in Infrastructure, Cloud, Systems and Security. 
+              Based in Riyadh, Saudi Arabia.
+            </p>
+          </div>
+
+          {/* Right: Quick Navigation */}
+          <div className="flex flex-wrap gap-6 md:justify-end md:items-start">
+            {footerLinks.map((link) => (
+              <a
+                href={link.href}
+                key={link.href}
+                className="text-neutral opacity-70 hover:opacity-100 hover:text-accent transition-all duration-300 text-sm font-medium">
+                {link.title}
+              </a>
+            ))}
+          </div>
+        </div>
+
+        {/* DIVIDER */}
+        <div className="border-t border-neutral/20 my-8" />
+
+        {/* BOTTOM SECTION: Contact, Location, Social, Copyright */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          {/* Column 1: Contact Info */}
+          <div>
+            <h5 className="text-neutral mb-3 text-sm font-semibold">Contact</h5>
+            <div className="space-y-2">
+              <a
+                href="mailto:uriyaz22@gmail.com"
+                className="text-neutral opacity-70 hover:text-accent hover:opacity-100 text-sm transition-all duration-300 block">
+                uriyaz22@gmail.com
+              </a>
+              <a
+                href="tel:+966535075778"
+                className="text-neutral opacity-70 hover:text-accent hover:opacity-100 text-sm transition-all duration-300 block">
+                +966 53 507 5778
+              </a>
             </div>
           </div>
 
-          <div className="md:self-end">
-            <p className="text-neutral mb-8 text-sm md:text-right">Languages</p>
-            <div className="flex gap-8 md:gap-4 lg:gap-8">
-              {languages.map((language, idx) => (
-                <span
-                  key={language}
-                  className={idx === 0 ? 'text-neutral' : 'text-tertiary-content'}>
-                  {language}
-                </span>
+          {/* Column 2: Location */}
+          <div>
+            <h5 className="text-neutral mb-3 text-sm font-semibold">Location</h5>
+            <address className="text-neutral opacity-70 text-sm not-italic">
+              12211, Riyadh<br />
+              Saudi Arabia
+            </address>
+          </div>
+
+          {/* Column 3: Social Links */}
+          <div>
+            <h5 className="text-neutral mb-3 text-sm font-semibold">Connect</h5>
+            <div className="flex gap-4">
+              {socials.map((item, index) => (
+                <a
+                  key={index}
+                  href={item.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-neutral opacity-70 hover:text-accent hover:opacity-100 transition-all duration-300 hover:scale-110 transform"
+                  aria-label={item.href}>
+                  {item.icon}
+                </a>
               ))}
             </div>
           </div>
         </div>
-      </div>
 
-      <div className="bg-neutral/4 absolute top-1/2 -right-[40%] z-0 h-[120dvw] w-[120dvw] -translate-y-1/2 rounded-full p-14 md:top-0 md:-right-[255px] md:-bottom-[450px] md:size-[1030px] md:-translate-y-0 md:p-20">
-        <div className="bg-neutral/4 size-full rounded-full p-14 md:p-20">
-          <div className="bg-neutral/5 size-full rounded-full" />
+        {/* FINAL ROW: Copyright & Languages */}
+        <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-4 mt-8 pt-6 border-t border-neutral/20">
+          {/* Copyright */}
+          <p className="text-neutral opacity-60 text-xs">
+            © 2025 Riyasudeen Farook. All rights reserved.
+          </p>
+
+          {/* Languages */}
+          <div className="flex gap-4">
+            <span className="text-neutral opacity-40 text-xs">Languages:</span>
+            {languages.map((language, idx) => (
+              <span
+                key={language}
+                className={`text-xs ${idx === 0 ? 'text-accent font-semibold' : 'text-neutral opacity-60'}`}>
+                {language}
+              </span>
+            ))}
+          </div>
         </div>
       </div>
+
+      {/* DECORATIVE BACKGROUND CIRCLES - Subtle */}
+      <div className="absolute top-1/2 -right-[300px] z-0 h-[600px] w-[600px] -translate-y-1/2 rounded-full opacity-5 bg-neutral/10 blur-3xl" />
     </footer>
   )
 }

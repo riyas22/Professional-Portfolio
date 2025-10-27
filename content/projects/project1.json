@@ -1,9 +1,8 @@
 {
   "priority": 1,
-  "title": "Color Contrast Collection",
-  "shortDescription": "Curated Background with Text colors contrast, help you to pick best contrast for your websites",
-  "cover": "https://res.cloudinary.com/dyvkdwzcj/image/upload/v1645090814/color-contrast_n598kw.png",
-  "livePreview": "https://example.com/alpha",
-  "type": "Client Work 🙍‍♂️",
-  "siteAge": "1 month old"
+  "title": "Enterprise Nutanix Infrastructure",
+  "shortDescription": "Designed and deployed hyper-converged infrastructure cluster running Windows Domain Controllers, SQL clusters, Veeam backup systems, and critical business applications with high availability.",
+  "cover": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=2070&auto=format&fit=crop",
+  "type": "Infrastructure 🏗️",
+  "siteAge": "18 months old"
 }

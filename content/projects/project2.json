@@ -1,9 +1,8 @@
 {
   "priority": 2,
-  "title": "Codevertiser",
-  "shortDescription": "A programming related article site to share my learnings",
-  "cover": "https://res.cloudinary.com/dyvkdwzcj/image/upload/v1656970810/Codevertiser_xlxdje.png",
-  "livePreview": "https://example.com/beta",
-  "visitors": "8K Visitors",
-  "earned": "$400 Earned"
+  "title": "Microsoft 365 & Intune MDM Deployment",
+  "shortDescription": "Led enterprise-wide Microsoft 365 migration and implemented Intune MDM for device management, including Windows Update control, security policies, and compliance monitoring across 800+ endpoints at Ajlan & Bros Holding Group.",
+  "cover": "https://images.unsplash.com/photo-1633265486064-086b219458ec?q=80&w=2070&auto=format&fit=crop",
+  "type": "Cloud & Identity ☁️",
+  "visitors": "800+ Devices"
 }

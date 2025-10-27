@@ -1,12 +1,7 @@
 {
   "priority": 4,
-  "title": "Ejucationzz",
-  "shortDescription": "Ejucationzz is a directory site I created for myself using Next.js. On Ejucationzz, you can find free and paid online and offline courses available in Pakistan. 14 academies and 12 main categories, each with subcategories, have been listed.",
-  "cover": "https://res.cloudinary.com/dyvkdwzcj/image/upload/v1598035107/pomodoro-clock_ctp2af.png",
-  "type": "New 🔥",
-  "livePreview": "https://example.com/Ejucationzz",
-  "siteAge": "4 months old",
-  "visitors": "100 Visitors",
-  "githubLink": "",
-  "earned": ""
+  "title": "Enterprise Security & Network Architecture",
+  "shortDescription": "Configured and manage comprehensive security infrastructure including Palo Alto firewall with policy-based forwarding, CrowdStrike EDR for endpoint protection, Proofpoint email security, nginx reverse proxy with SSL/TLS management, and VPN access for remote workforce.",
+  "cover": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2070&auto=format&fit=crop",
+  "type": "Security 🔒"
 }
