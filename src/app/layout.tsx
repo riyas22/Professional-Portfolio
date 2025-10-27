@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   keywords: [
     'IT Operations Manager',
     'Infrastructure Architect',
-    'Nutanix',
+    'Nutanix HCI',
     'Microsoft 365',
     'Intune MDM',
     'CrowdStrike',
