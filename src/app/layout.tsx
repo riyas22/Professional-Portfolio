@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   keywords: [
     'IT Operations Manager',
     'Infrastructure Architect',
-    'Nutanix HCI',
+    'Nutanix',
     'Microsoft 365',
     'Intune MDM',
     'CrowdStrike',
@@ -36,6 +36,8 @@ export const metadata: Metadata = {
     'Zabbix',
     'OpenSearch',
     'Proofpoint',
+    'Enterprise Backup Planning',
+    'Diaster Recovery',
     'VMWare'
   ],
   authors: [{ name: 'Riyasudeen Farook' }],
@@ -50,21 +52,12 @@ export const metadata: Metadata = {
     siteName: 'Riyasudeen Farook Portfolio',
     type: 'website',
     locale: 'en_US',
-    images: [
-      {
-        url: `${url}/og-image.png`,
-        width: 1200,
-        height: 630,
-        alt: 'Riyasudeen Farook - IT Operations Manager Portfolio',
-      },
-    ],
   },
   twitter: {
     title,
     description,
     card: 'summary_large_image',
     creator: '@riyasudeenpm',
-    images: [`${url}/og-image.png`],
   },
 }
 
