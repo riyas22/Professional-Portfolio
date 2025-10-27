@@ -67,7 +67,7 @@ This ensures proper configuration of environment variables.
 
 1. Navbar
    - File: navbar.tsx
-     - Update the navbar name from john_doe to your name.
+     - Update the navbar name from riyasudeen_farook to your name.
 2. Hero Section
    - File: hero.tsx
      - Edit the title, description, and optionally, replace the SVG with your image.
@@ -75,7 +75,7 @@ This ensures proper configuration of environment variables.
    - File: content/projects
      - Replace the dummy projects with your own.
      - If you are modifying the properties or going to add new ones, then update types in types.d.ts.
-4. Services Section
+4. Achievements Section
    - File: appData
      - Add your services with relevant icons. If icons are missing, contact me on LinkedIn or via email.
 5. Skills Section
@@ -128,24 +128,6 @@ We use Tailwind CSS for styling. In `global.css`, you can customize theme variab
 
 ### If you find this template helpful, don't forget to ⭐️ the repo!
 
-## 💎 Upgrade to Premium
-
-✨ **Premium Features Include:**
-
-In premium template you will get one extra feature
-
-- 📝 MDX Blog System with code snippets
-
-[Get Premium Version](https://basit313.gumroad.com/l/nextjs-developer-portfolio-template) | [View Premium Demo](https://nextjs-dev-portfolio.netlify.app/)
-
-## 🆓 vs 💎 Premium
-
-| **Feature**       | **Free Version** | **Premium Version** |
-| ----------------- | ---------------- | ------------------- |
-| Blog System (MDX) | ❌               | ✅ Full Integration |
-| UI Components     | 20               | 25+                 |
-| Email Support     | ✅               | ✅ Priority         |
-
 ![footer section](https://ik.imagekit.io/cpnw7c0xpe/Tailwind%20Components/Templates/flexy-dev-footer.png?updatedAt=1741813601842)
 
 ## Analytics
@@ -159,8 +141,8 @@ You can integrate analytics easily:
 
 Before deploying, add environment variables from .env.local wherever you are deploying:
 
-1. NEXT_PUBLIC_SITE_URL: Set to your actual site URL (e.g., https://johndoe.com).
+1. NEXT_PUBLIC_SITE_URL: Set to your actual site URL (e.g., https://riyasudeen.me).
 1. CONTACT_FORM_ACTION_URL: Your [formspree](https://formspree.io/) url.
 1. For local development, use the localhost URL.
 
-For any query or suggestion, I am available on [LinkedIn](https://www.linkedin.com/in/abdulbasitprofile/) or email me at basit@codevertiser.com
+For any query or suggestion, I am available on [LinkedIn](https://www.linkedin.com/in/riyasudeen-p-m/) or email me at basit@codevertiser.com

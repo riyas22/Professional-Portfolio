@@ -1,16 +1,3 @@
-// Data for portfolio - IT Operations Focus
-import {
-  ExpressjsIcon,
-  JavaScriptIcon,
-  NestjsIcon,
-  NextjsIcon,
-  NodejsIcon,
-  ReactIcon,
-  SocketIcon,
-  TailwindCSS,
-  TypescriptIcon,
-} from '../utils/icons'
-
 // Project Data - Your Real IT Projects
 export const projects = [
   {

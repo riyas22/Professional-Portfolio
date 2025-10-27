@@ -1,12 +1,11 @@
 'use client'
 import useRoleSwitcher from '@/hooks/useRoleSwitcher'
-import useRotatingAnimation from '@/hooks/useRotatingAnimation'
 import Image from 'next/image'
 import { HeroImage } from '../../utils/images'
-import Ellipse from './Ellipse'
+//import Ellipse from './Ellipse'
 
 const Hero = () => {
-  const ellipseRef = useRotatingAnimation()
+  //const ellipseRef = useRotatingAnimation()
   const role = useRoleSwitcher({ 
     roles: ['IT Operations Manager', 'IT Manager', 'IT Infrastructure Manager'] 
   })
