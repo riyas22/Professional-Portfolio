@@ -8,7 +8,7 @@ import { Fira_Code } from 'next/font/google'
 
 const firaCode = Fira_Code({ subsets: ['latin'], weight: ['300', '400', '500', '600', '700'] })
 
-const title = 'Riyasudeen Farook | IT Operations Manager'
+const title = 'Riyasudeen Farook | IT Operations Manager | Portfolio'
 
 const description =
   'IT Operations Manager based in Riyadh, Saudi Arabia, specializing in Infrastructure Management, Cloud Operations, and Enterprise Security. Expertise in Nutanix, Microsoft 365, CrowdStrike, Palo Alto, and automation with Docker and n8n.'
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   keywords: [
     'IT Operations Manager',
     'Infrastructure Architect',
-    'Nutanix',
+    'Nutanix HCI',
     'Microsoft 365',
     'Intune MDM',
     'CrowdStrike',
@@ -35,7 +35,8 @@ export const metadata: Metadata = {
     'n8n Automation',
     'Zabbix',
     'OpenSearch',
-    'Proofpoint'
+    'Proofpoint',
+    'VMWare'
   ],
   authors: [{ name: 'Riyasudeen Farook' }],
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL!),
@@ -49,12 +50,21 @@ export const metadata: Metadata = {
     siteName: 'Riyasudeen Farook Portfolio',
     type: 'website',
     locale: 'en_US',
+    images: [
+      {
+        url: `${url}/og-image.png`,
+        width: 1200,
+        height: 630,
+        alt: 'Riyasudeen Farook - IT Operations Manager Portfolio',
+      },
+    ],
   },
   twitter: {
     title,
     description,
     card: 'summary_large_image',
-    creator: '@riyasudeenpm', 
+    creator: '@riyasudeenpm',
+    images: [`${url}/og-image.png`],
   },
 }
 
