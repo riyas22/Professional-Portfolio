@@ -16,15 +16,14 @@ const Hero = () => {
         
         {/* LEFT SIDE: Text Content */}
         <div className="flex min-h-48 flex-col justify-between lg:min-h-56 lg:max-w-[33.75rem]">
-          <h1>
+          {/* FIXED HEIGHT H1 CONTAINER */}
+          <h1 className="min-h-[9rem] md:min-h-[6rem]">
             <span className="text-neutral mb-2 block text-3xl font-bold">
               Hi - I'm Riyasudeen Farook
             </span>
-          <div className="min-h-[4rem] md:min-h-[2.25rem]">  
             <span className="text-accent block text-[1.75rem] font-bold">
               {role}
             </span>
-          </div>
           </h1>
 
           <h2 className="text-neutral mt-3 text-base leading-relaxed">
