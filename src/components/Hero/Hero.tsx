@@ -20,9 +20,11 @@ const Hero = () => {
             <span className="text-neutral mb-2 block text-3xl font-bold">
               Hi - I'm Riyasudeen Farook
             </span>
-            <span className="text-accent block text-[1.75rem] font-bold min-h-[4.5rem] md:min-h-[2.25rem]">
+          <div className="min-h-[4rem] md:min-h-[2.25rem]">  
+            <span className="text-accent block text-[1.75rem] font-bold">
               {role}
             </span>
+          </div>
           </h1>
 
           <h2 className="text-neutral mt-3 text-base leading-relaxed">
