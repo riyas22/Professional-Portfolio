@@ -16,17 +16,19 @@ const Hero = () => {
         
         {/* LEFT SIDE: Text Content */}
         <div className="flex min-h-48 flex-col justify-between lg:min-h-56 lg:max-w-[33.75rem]">
-          {/* FIXED HEIGHT H1 CONTAINER */}
-          <h1 className="min-h-[9rem] md:min-h-[6rem]">
-            <span className="text-neutral mb-2 block text-3xl font-bold">
-              Hi - I'm Riyasudeen Farook
-            </span>
-            <span className="text-accent block text-[1.75rem] font-bold">
-              {role}
-            </span>
-          </h1>
+          {/* FIXED HEIGHT CONTAINER WITH ABSOLUTE POSITIONING */}
+          <div className="relative h-[9rem] md:h-[6rem] mb-3">
+            <h1 className="absolute inset-0">
+              <span className="text-neutral mb-2 block text-3xl font-bold">
+                Hi - I'm Riyasudeen Farook
+              </span>
+              <span className="text-accent block text-[1.75rem] font-bold leading-tight">
+                {role}
+              </span>
+            </h1>
+          </div>
 
-          <h2 className="text-neutral mt-3 text-base leading-relaxed">
+          <h2 className="text-neutral text-base leading-relaxed">
             Leading enterprise infrastructure operations in Riyadh | Nutanix HCI | Microsoft 365 | Cloud Security | Driving digital transformation through automation | Virtualization | Cloud Computing
           </h2>
 
