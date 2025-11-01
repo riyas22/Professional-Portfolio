@@ -1,3 +1,4 @@
+"use client";
 import { FC, InputHTMLAttributes } from 'react'
 
 interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
